@@ -30,7 +30,8 @@ describe Item do
     end
 
     it 'can be changed' do
-      expect{ subject.price = 573.0 }.to change(subject.price).to 573
+      subject.price = 573.0 
+      expect(subject.price).to eq 573
     end
   end
 end
