@@ -8,6 +8,7 @@ describe Printer do
         "\
 #{Time.now.strftime('%Y.%m.%d %H:%M:%S')}
 My Cafe
+
 5 High St
 123456789
 "
