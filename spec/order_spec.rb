@@ -13,16 +13,20 @@ describe Order do
   end
 
   describe '#remove_item' do
-    let(:coffe) { Item.new('coffee',342) }
+    let(:coffee) { Item.new('coffee',342) }
     let(:tea) { Item.new('tea',242) }
-    let(:big_order) { subject.add_item(3, coffee); subject.add_item(7, tea) }
+
+    before do
+      subject.add_item(3, coffee)
+      subject.add_item(7, tea)
+    end
 
     it 'removes an item to the order_so_far array' do
       expect(subject.remove_item(tea).size).to eq 9
     end
 
     it 'adds multiple items to the order_so_far array' do
-      expect(subject.remove_item(5, tea).size).to eq 4
+      expect(subject.remove_item(5, tea).size).to eq 5
     end
   end
 end

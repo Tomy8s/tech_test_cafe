@@ -1,3 +1,5 @@
+require_relative 'array'
+
 class Order
   def initialize
     @order_so_far = []
@@ -8,7 +10,12 @@ class Order
   end
 
   def add_item(quantity = 1, item)
-    quantity.times{ @order_so_far << item}
+    quantity.times{ @order_so_far << item }
+    return_order_so_far
+  end
+
+  def remove_item(quantity = 1, item)
+    quantity.times{ @order_so_far.remove(item) }
     return_order_so_far
   end
 end
