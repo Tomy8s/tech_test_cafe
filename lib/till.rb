@@ -1,5 +1,6 @@
 require_relative 'item'
 require_relative 'order'
+require_relative 'printer'
 require_relative 'array'
 
 class Till
@@ -20,5 +21,8 @@ class Till
     quantity.times{ @order.order_so_far.remove(item) }
     return_order_so_far
   end
-  
+
+  def print_order
+    # Printer.print(@order)
+  end
 end
