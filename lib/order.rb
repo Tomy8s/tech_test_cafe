@@ -1,21 +1,7 @@
-require_relative 'array'
-
 class Order
+  attr_accessor :order_so_far
+
   def initialize
     @order_so_far = []
-  end
-
-  def return_order_so_far
-    @order_so_far.dup
-  end
-
-  def add_item(quantity = 1, item)
-    quantity.times{ @order_so_far << item }
-    return_order_so_far
-  end
-
-  def remove_item(quantity = 1, item)
-    quantity.times{ @order_so_far.remove(item) }
-    return_order_so_far
   end
 end
