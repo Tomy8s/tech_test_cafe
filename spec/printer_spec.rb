@@ -16,15 +16,16 @@ describe Printer do
       expect{ subject.class.print({name: 'My Cafe', address: '5 High St', phone: '123456789'}, order.order_so_far) }.to output(
         "\
 #{Time.now.strftime('%Y.%m.%d %H:%M:%S')}
-My Cafe
+           My Cafe            
 
-5 High St
-123456789
+          5 High St           
+          123456789           
 
-coffee1 x 3.42 = 3.42
-tea5 x 2.42 = 12.10
+coffee         1 x 3.42 = 3.42
+tea           5 x 2.42 = 12.10
 
-total15.52
+                 total   15.52
+   of which VAT at 20%    3.10
 "
         ).to_stdout
     end
