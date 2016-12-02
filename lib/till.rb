@@ -33,6 +33,6 @@ class Till
   end
 
   def print_order
-    Printer.print(@cafe_info, @order)
+    Printer.print(@cafe_info, @order.delete)
   end
 end
