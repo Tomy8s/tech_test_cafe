@@ -1,6 +1,6 @@
 # [Cafe tech test](https://github.com/makersacademy/course/blob/master/individual_challenges/till_tech_test.md)
 
-## Load (lib/load.rb)
+## Load [(lib/load.rb)](https://github.com/Tomy8s/tech_test_cafe/blob/master/lib/load.rb)
 
 Run load to load ruby objects from the JSON provided.
 + create a Till, with a Menu and cafe info
