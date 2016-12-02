@@ -1,12 +1,12 @@
-require 'order'
+require_relative 'order'
 
 class Printer
   def self.print(cafe_info, order)
     self.print_cafe_info(cafe_info)
     puts #linebreak
-    self.print_order(order)
+    self.print_order(order.order_so_far)
     puts #linebreak
-    self.print_total(order)
+    self.print_total(order.order_so_far)
   end
 
   def self.print_cafe_info(cafe_info)

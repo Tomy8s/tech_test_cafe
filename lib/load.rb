@@ -1,5 +1,10 @@
 require 'json'
+require_relative 'item'
+require_relative 'order'
+require_relative 'printer'
 require_relative 'menu'
+require_relative 'array'
+require_relative 'till'
 
 class Load
   def initialize

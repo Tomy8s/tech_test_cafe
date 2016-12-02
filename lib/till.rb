@@ -33,6 +33,7 @@ class Till
   end
 
   def print_order
-    Printer.print(@cafe_info, @order.delete)
+    Printer.print(@cafe_info, @order)
+    @order = Order.new
   end
 end
