@@ -8,7 +8,7 @@ describe Item do
     end
 
     it 'raises an error if attempting to change name' do
-      expect{ subject.name = 'not coffee' }.to raise_error
+      expect{ subject.name = 'not coffee' }.to raise_error NoMethodError
     end
 
     it 'can\'t easily change its name' do
