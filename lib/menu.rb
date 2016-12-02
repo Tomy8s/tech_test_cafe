@@ -1,6 +1,4 @@
 class Menu
-  attr_reader :return_items
-
   def initialize
     @items = []
   end
