@@ -1,7 +1,9 @@
 require 'spec_helper'
 
 describe Till do
-    describe '#add_item' do
+  let(:subject) { Till.new('My cafe', '5 High St', '123456789', Menu.new) }
+
+  describe '#add_item' do
     it 'adds an item to the order_so_far array' do
       expect(subject.add_item(Item.new('coffee',342)).size).to eq 1
     end

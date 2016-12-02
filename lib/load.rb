@@ -26,6 +26,10 @@ class Load
     end
     @menu
   end
+
+  def load_till
+    Till.new(parse_json[0]['ShopName'], parse_json[0]['address'], parse_json[0]['phone'], @menu)
+  end
 end
 
 Load.new
